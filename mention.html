@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=z45s_Ve-MxNCZSSjSVlki8xX9lkXXHKpfDDfKRD2DZbNmKRjFnELCD39b6AHFSiOFIj230z8XqGcZgub_XtCQSKcS7haROYBR9REmgYN9JyPMn5PN2E02Oa40hsqyDQpxzLM51JnARBAvdjZ_0TZts4csANFHjLTK_X9B-qGAviHzKhFQSSaLwrXCW_cx5f4EZC9cTyFc6MobskLuAuejQyCvm0QbfleXYhErQUKm-R6Ivb6QVGLdBcF0a3BYLgmzvYHG-i-Gswco07s8PrRUo0FPdDFW9V-vg0Y19um8ESxcIStq-9wnPMyX7C-89rQ0uCnyWPbuy9oUJvhOFhZapdOOhICjoIwiSWASXgpXARw8Kij7_FysZbQ_J2kQv0F" charset="UTF-8"></script></head>
+  <body>
+    <h1 align="center">Categories</h1>
+    <h2>Mention eleve</h2>
+    <h3>Entrer moyenne:</h3>
+    <label for="moy">Moyenne</label>
+    <input type="number" id="moy" />
+    <button onclick="moyenne()">Mention eleve</button> <br />
+    <h1 id="mention"></h1>
+    <script>
+      function moyenne() {
+        let a = Number(document.getElementById("moy").value);
+        if (a >= 10 && a < 12) {
+          document.getElementById("mention").innerHTML = "passable";
+        } else if (a >= 12 && a < 14) {
+          document.getElementById("mention").innerHTML = "moyen";
+        } else if (a >= 14 && a < 16) {
+          document.getElementById("mention").innerHTML = "bien";
+        } else if (a >= 16 && a < 18) {
+          document.getElementById("mention").innerHTML = "tres bien";
+        } else if (a >= 18 && a < 20) {
+          document.getElementById("mention").innerHTML = "excellent";
+        }
+      }
+    </script>
+  </body>
+</html>
